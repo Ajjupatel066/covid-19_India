@@ -1,12 +1,23 @@
-GET http://localhost:3006/states/
+POST http://localhost:3006/login/
+Content-Type: application/json
 
+{
+"username": "christopher_phillips",
+"password": "christy@123"
+}
 ###
 
+GET http://localhost:3006/states/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg5MTYxNjQ3fQ.A4D0lfZrONMpt-Hh-sqNGJskPnbdCEAyLzCpFhVE2Sc
+
+###
 GET http://localhost:3006/states/8/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg5MTYxNjQ3fQ.A4D0lfZrONMpt-Hh-sqNGJskPnbdCEAyLzCpFhVE2Sc
 
 ###
 
 POST http://localhost:3006/districts/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg5MTYxNjQ3fQ.A4D0lfZrONMpt-Hh-sqNGJskPnbdCEAyLzCpFhVE2Sc
 Content-Type: application/json
 
 {
@@ -21,13 +32,16 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3006/districts/301/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg5MTYxNjQ3fQ.A4D0lfZrONMpt-Hh-sqNGJskPnbdCEAyLzCpFhVE2Sc
 
 ###
 DELETE  http://localhost:3006/districts/322/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg5MTYxNjQ3fQ.A4D0lfZrONMpt-Hh-sqNGJskPnbdCEAyLzCpFhVE2Sc
 
 ###
 
 PUT http://localhost:3006/districts/201/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg5MTYxNjQ3fQ.A4D0lfZrONMpt-Hh-sqNGJskPnbdCEAyLzCpFhVE2Sc
 Content-Type: application/json
 
 {
@@ -42,7 +56,4 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3006/districts/201/stats/
-
-###
-
-GET http://localhost:3006/districts/501/details/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg5MTYxNjQ3fQ.A4D0lfZrONMpt-Hh-sqNGJskPnbdCEAyLzCpFhVE2Sc
